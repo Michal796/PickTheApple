@@ -30,9 +30,10 @@ public class ApplePicker : MonoBehaviour
             basketList.Add(tBasketGO);
         }
     }
+    
+    //metoda uruchamiana, gdy zostanie przechwycone zgniłe jabłko, lub gdy nie zostanie przechwycone zdrowe jabłko
     public void DestroyBasket()
     {
-        //metoda uruchamiana, gdy zostanie przechwycone zgniłe jabłko, lub gdy nie zostanie przechwycone zdrowe jabłko
 
         //zniszczenie wszystkich jabłek w scenie
         GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Jabłko");
