@@ -46,11 +46,13 @@ public class ApplePicker : MonoBehaviour
         {
             Destroy(rGO);
         }
+        
         //usuwanie jednego kosza,
         int basketIndex = basketList.Count - 1;
         GameObject tBasketGO = basketList[basketIndex];
         basketList.RemoveAt(basketIndex);
         Destroy(tBasketGO);
+       
         //upuszczenie 5 jabłek z koszyka // nie ma wpływu na punktację (tylko charakter wizualny)
         for (int i=0; i < 5; i++)
         {
@@ -65,8 +67,9 @@ public class ApplePicker : MonoBehaviour
             //zniszczenie jabłek po 2 sekundach (gdy znikną z ekranu)
             Invoke("DestroyDropApples", 2f);
         }
+        
+        //restart gry, gdy skończyły się koszyki
         if (basketList.Count == 0)
-            //restart gry, gdy skończyły się koszyki
         {
             SceneManager.LoadScene("PickTheApple");
             diffLvl = 1;
