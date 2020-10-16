@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//skrypt obiektu drzewa odpowiada za poruszanie się drzewa, oraz generowanie jabłek
+//ta klasa odpowiada za poruszanie się drzewa, oraz generowanie jabłek
 public class Jabłoń : MonoBehaviour
 {
     [Header("Definiowanie ręczne w panelu Inspector")]
